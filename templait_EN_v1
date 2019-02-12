@@ -6,7 +6,7 @@ The www.example.com domain has a cross-site scripting vulnerability of the refle
 **Testing environment:** Firefox Quantum 65.0 (64-bit), Burp Suite Community Edition v1.7.36
 **Example of exploitation:**
 1. Go to the URL https://example.com/index.php
-2. As a payload in the GET parameter *param* we use the string `”> <svg / onload = alert ()>`.
+2. As a payload in the GET parameter *param* we use the string `”><svg/onload=alert()>`.
 
 {screenshot1}
 {screenshot2}
