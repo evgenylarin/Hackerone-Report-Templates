@@ -1,0 +1,20 @@
+The www.example.com domain has a cross-site scripting vulnerability of the reflected type.
+
+**Vulnerable script:** https://example.com/index.php
+**Vulnerable parameter:** GET param
+**Exploitation conditions:** any external intruder
+**Testing environment:** Firefox Quantum 65.0 (64-bit), Burp Suite Community Edition v1.7.36
+**Example of exploitation:**
+1. Go to the URL https://example.com/index.php
+2. As a payload in the GET parameter *param* we use the string `”> <svg / onload = alert ()>`.
+
+{screenshot1}
+{screenshot2}
+...
+**Recommendations:**
++ Recommendation 1
++ Recommendation 2
+
+As a result of exploiting a vulnerability, an attacker can:
++ Do this
++ And that
